@@ -21,13 +21,19 @@
 
 .App-header {
   background-color: #ffffff;
-  min-height: 100vh;
+  height: 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+}
+
+.Body {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .Text {

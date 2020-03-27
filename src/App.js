@@ -5,7 +5,8 @@ import final2 from './images/final-kontaktaufnahme.png';
 import final3 from './images/final-quarantaene.png';
 import final4 from './images/final-soziales-verhalten.png';
 import decisionTreeLogic from './decisionTree.json'
-import decisionTreeGermanText from './decisonTreeGerman.json'
+import decisionTreeGermanText from './decisionTreeTexts/decisonTreeGerman.json'
+import decisionTreeSpanishText from './decisionTreeTexts/decisionTreeSpanish.json'
 import Button from './components/Button'
 
 let firstQuestionKey = 'three'
@@ -18,16 +19,35 @@ let finalImages = {
   "hygiene": final4
 }
 
+const languages = {
+  ES: 'Español',
+  DE: 'Deutsch',
+  EN: 'English'
+}
+
+const sourceTexts = {
+  [languages.DE] : decisionTreeGermanText,
+  [languages.EN] : decisionTreeGermanText,
+  [languages.ES] : decisionTreeSpanishText
+}
+
 class Question extends React.Component {
   constructor() {
     super()
+    const textSource = sourceTexts[languages.ES]
     this.state = {
       currentKey: firstQuestionKey,
       currentQuestionLogic: decisionTreeLogic[firstQuestionKey],
-      currentQuestion: decisionTreeGermanText[firstQuestionKey],
-      keysHistory: []
+      currentQuestion: textSource[firstQuestionKey],
+      keysHistory: [],
+      currentLanguage: languages.ES
     }
   }
+
+  textSource = () => {
+    return sourceTexts[this.state.currentLanguage]
+  }
+
 
   getTitle = (question) => {
     if (question["title"] != null) {
@@ -42,8 +62,8 @@ class Question extends React.Component {
       return {
         currentKey: nextKey,
         currentQuestionLogic: decisionTreeLogic[nextKey],
-        currentQuestion: this.getTitle(decisionTreeGermanText[nextKey]),
-        keysHistory: newKeysHistory//[...prevState.keysHistory,prevState.currentKey]
+        keysHistory: newKeysHistory,
+        currentLanguage: prevState.currentLanguage
       }
     })
   }
@@ -53,8 +73,8 @@ class Question extends React.Component {
       return {
         currentKey: firstQuestionKey,
         currentQuestionLogic: decisionTreeLogic[firstQuestionKey],
-        currentQuestion: decisionTreeGermanText[firstQuestionKey],
-        keysHistory: []
+        keysHistory: [],
+        currentLanguage: prevState.currentLanguage
       }
     })
   }
@@ -66,12 +86,12 @@ class Question extends React.Component {
     }
 
     Object.keys(finalImages).forEach(key => {
-      let hasTextForImage = decisionTreeGermanText[this.state.currentKey][key] != null
+      let hasTextForImage = this.textSource()[this.state.currentKey][key] != null
       if (hasTextForImage) {
         finalOptions.push(
           <div key={key+'-div'}>
             <img key={key+'-img'} src={finalImages[key]} className="App-logo" alt="logo"/>
-            {this.parseHTMLIn(decisionTreeGermanText[this.state.currentKey][key])}
+            {this.parseHTMLIn(this.textSource()[this.state.currentKey][key])}
           </div>
         )
       }
@@ -86,7 +106,7 @@ class Question extends React.Component {
       return buttons
     }
     let optionKeys = Object.keys(this.state.currentQuestionLogic)
-    let optionTitles = optionKeys.map (key => decisionTreeGermanText[key])
+    let optionTitles = optionKeys.map (key => this.textSource()[key])
     let nextSteps = optionKeys.map (key => this.state.currentQuestionLogic[key])
     var i;
 
@@ -108,7 +128,6 @@ class Question extends React.Component {
       return {
         currentKey: lastKey,
         currentQuestionLogic: decisionTreeLogic[lastKey],
-        currentQuestion: decisionTreeGermanText[lastKey],
         keysHistory: keysHistory
       }
     })
@@ -118,24 +137,46 @@ class Question extends React.Component {
     return <div className="Text" dangerouslySetInnerHTML={{__html: text}} />
   }
 
+  chooseGerman = () => {
+    this.chooseLanguage(languages.DE)
+  }
+
+  chooseSpanish = () => {
+    this.chooseLanguage(languages.ES)
+  }
+
+  chooseLanguage = (newLanguge) => {
+    this.setState((prevState, props) => {
+      return {
+        currentLanguage: newLanguge
+      }
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
+        <div>
+          <Button title="Español" onPress={() => this.chooseSpanish()}/>
+          <Button title="Deutsch" onPress={() => this.chooseGerman()}/>
+        </div>
+        </header>
+        <body className="Body">
           <div>
             {this.state.keysHistory.length > 0
               ? <Button
-                 title={decisionTreeGermanText[backKey]}
+                 title={this.textSource()[backKey]}
                  onPress={() => this.goBack()}/>
               : null
             }
 
             <Button
-              title={decisionTreeGermanText[startAgainKey]}
+              title={this.textSource()[startAgainKey]}
               onPress={() => this.startOver()}/>
           </div>
           <div>
-            {this.parseHTMLIn(this.state.currentQuestion)}
+            {this.parseHTMLIn(this.getTitle(this.textSource()[this.state.currentKey]))}
           </div>
           <div>
             {this.makeOptions()}
@@ -143,7 +184,7 @@ class Question extends React.Component {
           <div>
             {this.makeFinalOptions()}
           </div>
-        </header>
+        </body>
       </div>
     );
   }
