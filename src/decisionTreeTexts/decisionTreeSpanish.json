@@ -7,7 +7,7 @@
   "six" : "¿Tiene esa persona <strong>síntomas</strong> (especialmente fiebre o tos)?",
   "seven" : "Su <strong>contacto</strong> debe ponerse en contacto con el departamento de Sanidad. Usted debe <strong>esperar</strong> al resultado del <strong>test Sars-CoV-2</strong> de su contacto. ¿Cuál fue el resultado del test?",
   "eight": "<strong>Usted no está categorizada como persona posiblemente infectada.</strong><br><br>Si presenta síntomas (especialmente fiebre y tos), <strong>quédese en casa, guarde reposo</strong> y contacte por teléfno a un médico si su situación no mejora.",
-  "nine" : "¿Tuvo al menos 15 minutos <strong>de contacto directo</strong> con la persona? ¿Una conversación en persona?<br>O<br>¿tuvo contacto con algun <strong>fluido corporal</strong> de la persona, a través de besos, estornudos o tos?<br>O<br>¿tuvo un <strong>asiento en un avión</strong> dos filas delante, detrás o en la misma fila que la persona?",
+  "nine" : "¿Tuvo al menos 15 minutos <strong>de contacto directo</strong> con la persona? ¿Una conversación en persona?<br><br>O<br><br>¿tuvo contacto con algun <strong>fluido corporal</strong> de la persona, a través de besos, estornudos o tos?<br><br>O<br><br>¿tuvo un <strong>asiento en un avión</strong> dos filas delante, detrás o en la misma fila que la persona?",
   "ten" : "Usted no califica para ninguna de los criterios nombrados.<br>¿Estuvo en <strong>la misma habitación</strong> que la persona?",
   "eleven" : "Si tiene síntomas (especialmente fiebre y tos), <strong>quédese en casa, guarde reposo</strong> y contacte por teléfno a un médico si su situación no mejora.",
   "twelve" : "Si su persona de contacto <strong>finalmente sí desarrolla síntomas</strong> vuelva a empezar este cuestionario, por favor.",
