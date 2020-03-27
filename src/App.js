@@ -162,7 +162,7 @@ class Question extends React.Component {
           <Button title="Deutsch" onPress={() => this.chooseGerman()}/>
         </div>
         </header>
-        <body className="Body">
+        <div className="Body">
           <div>
             {this.state.keysHistory.length > 0
               ? <Button
@@ -184,7 +184,7 @@ class Question extends React.Component {
           <div>
             {this.makeFinalOptions()}
           </div>
-        </body>
+        </div>
       </div>
     );
   }
