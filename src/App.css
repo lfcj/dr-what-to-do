@@ -30,6 +30,12 @@
   color: black;
 }
 
+.Text {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ececec;
+}
+
 .App-link {
   color: #61dafb;
 }

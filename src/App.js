@@ -10,6 +10,7 @@ import Button from './components/Button'
 
 let firstQuestionKey = 'three'
 let startAgainKey = "start-again"
+let backKey = "back"
 let finalImages = {
   "contact": final1,
   "quarantine": final2,
@@ -35,13 +36,14 @@ class Question extends React.Component {
     return question
   }
 
-  goToNext = (nextKey) => {
+  goTo = (nextKey) => {
     this.setState((prevState, props) => {
+      let newKeysHistory = prevState.keysHistory.concat([prevState.currentKey])
       return {
         currentKey: nextKey,
         currentQuestionLogic: decisionTreeLogic[nextKey],
         currentQuestion: this.getTitle(decisionTreeGermanText[nextKey]),
-        keysHistory: prevState.keysHistory + [prevState.currentKey]
+        keysHistory: newKeysHistory//[...prevState.keysHistory,prevState.currentKey]
       }
     })
   }
@@ -59,19 +61,17 @@ class Question extends React.Component {
 
   makeFinalOptions = () => {
     var finalOptions = []
-    if (this.state.currentQuestionLogic != null) {
+    if (this.state.currentQuestionLogic != null || this.state.currentKey == null) {
       return finalOptions
     }
 
     Object.keys(finalImages).forEach(key => {
-      // console.log(this.state.currentKey)
-      // console.log(decisionTreeGermanText[this.state.currentKey])
       let hasTextForImage = decisionTreeGermanText[this.state.currentKey][key] != null
       if (hasTextForImage) {
         finalOptions.push(
           <div key={key+'-div'}>
             <img key={key+'-img'} src={finalImages[key]} className="App-logo" alt="logo"/>
-            <p key={key+'-text'}>{this.parseHTMLIn(decisionTreeGermanText[this.state.currentKey][key])}</p>
+            {this.parseHTMLIn(decisionTreeGermanText[this.state.currentKey][key])}
           </div>
         )
       }
@@ -95,23 +95,45 @@ class Question extends React.Component {
       buttons.push(<Button
         key={optionTitle}
         title={optionTitle}
-        onPress={this.goToNext}
+        onPress={this.goTo}
         next={nextSteps[i]}/>)
     }
     return buttons
   }
 
+  goBack = () => {
+    var keysHistory = this.state.keysHistory
+    const lastKey = keysHistory.pop()
+    this.setState((prevState, props) => {
+      return {
+        currentKey: lastKey,
+        currentQuestionLogic: decisionTreeLogic[lastKey],
+        currentQuestion: decisionTreeGermanText[lastKey],
+        keysHistory: keysHistory
+      }
+    })
+  }
+
   parseHTMLIn = (text) => {
-    return <p dangerouslySetInnerHTML={{__html: text}} />
+    return <div className="Text" dangerouslySetInnerHTML={{__html: text}} />
   }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Button
-            title={decisionTreeGermanText[startAgainKey]}
-            onPress={this.startOver}/>
+          <div>
+            {this.state.keysHistory.length > 0
+              ? <Button
+                 title={decisionTreeGermanText[backKey]}
+                 onPress={() => this.goBack()}/>
+              : null
+            }
+
+            <Button
+              title={decisionTreeGermanText[startAgainKey]}
+              onPress={() => this.startOver()}/>
+          </div>
           <div>
             {this.parseHTMLIn(this.state.currentQuestion)}
           </div>

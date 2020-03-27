@@ -7,25 +7,13 @@ class Button extends React.Component {
   }
 
   toggleTouched = () => {
-    this.setState( prevState => ({
-      touched: !prevState.touched
-    }));
     this.props.onPress(this.props.next)
   }
 
-  handleMouseUp = () => {
-     // Handle smooth animation when clicking without holding
-     setTimeout( () => {
-       this.setState({ touched: false });
-     }, 150);
-  }
-
  render () {
-   const { touched } = this.state;
-   const className = touched ? 'btn touched' : 'btn';
    return (
        <button
-         className={className}
+         className="btn"
          onMouseDown={this.toggleTouched}
          onMouseUp={this.handleMouseUp}
        >
