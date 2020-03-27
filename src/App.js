@@ -71,7 +71,7 @@ class Question extends React.Component {
         finalOptions.push(
           <div key={key+'-div'}>
             <img key={key+'-img'} src={finalImages[key]} className="App-logo" alt="logo"/>
-            <p key={key+'-text'}>{decisionTreeGermanText[this.state.currentKey][key]}</p>
+            <p key={key+'-text'}>{this.parseHTMLIn(decisionTreeGermanText[this.state.currentKey][key])}</p>
           </div>
         )
       }
@@ -101,20 +101,8 @@ class Question extends React.Component {
     return buttons
   }
 
-  parseHTMLInQuestion = () => {
-    const questionSeparatedByNewLines = this.state.currentQuestion.split("\n")
-
-    // const questionSeparatedByBoldMarkup =
-    return questionSeparatedByNewLines.map (part => {
-
-      if (part.includes("<strong>")) {
-        const partWithoutMarkupFirst = part.replace("<strong>", "")
-        const partWithoutMarkupLast = partWithoutMarkupFirst.replace("</strong>", "")
-        return <strong key={part+'-question'+Math.random()}><p key={part+'-question'+Math.random()}>{partWithoutMarkupLast}</p></strong>
-      } else {
-        return <p key={part+'-question'+Math.random()}>{part}</p>
-      }
-    })
+  parseHTMLIn = (text) => {
+    return <p dangerouslySetInnerHTML={{__html: text}} />
   }
 
   render() {
@@ -125,7 +113,7 @@ class Question extends React.Component {
             title={decisionTreeGermanText[startAgainKey]}
             onPress={this.startOver}/>
           <div>
-            {this.parseHTMLInQuestion()}
+            {this.parseHTMLIn(this.state.currentQuestion)}
           </div>
           <div>
             {this.makeOptions()}
