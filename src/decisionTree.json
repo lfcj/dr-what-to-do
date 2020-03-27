@@ -1,0 +1,32 @@
+{
+  "one" : "three",
+  "two" : "three",
+  "three" : {
+    "yes" : "four",
+    "no" : "five"
+  },
+  "four" : {
+    "yes" : "nine",
+    "no" : "five"
+  },
+  "five" : {
+    "yes" : "six",
+    "no" : "eight"
+  },
+  "six" : {
+    "yes" : "seven",
+    "no" : "thirteen"
+  },
+  "seven" : {
+    "positive" : "four",
+    "negative" : "twelve"
+  },
+  "nine" : {
+    "yes" : "category1",
+    "no" : "ten"
+  },
+  "ten" : {
+    "yes" : "category2",
+    "no" : "eight"
+  }
+}
