@@ -158,9 +158,9 @@ class Question extends React.Component {
       <div className="App">
         <header className="App-header">
         <div>
-          <Button title="Español" onPress={() => this.chooseSpanish()}/>
           <Button title="Deutsch" onPress={() => this.chooseGerman()}/>
-          <p><strong>Hausartzpraxis am Borsigturm</strong></p>
+          <Button title="Español" onPress={() => this.chooseSpanish()}/>
+          <p><strong>Hausarztpraxis am Borsigturm</strong></p>
           <div className="information">
             <a href="http://www.borhani-harder-hausaerzte.de/hausarztpraxis-am-borsigturm---kontakt.html">
             Kontakt</a>
