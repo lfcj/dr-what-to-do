@@ -21,16 +21,19 @@
 
 .App-header {
   background-color: #ffffff;
-  height: 40px;
-  display: flex;
+  /* height: 40px; */
+  /* display: flex; */
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: black;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .Body {
   min-height: 70vh;
   display: flex;
+  flex: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -62,10 +65,16 @@
 
 .information {
   font-size: 15px;
+  margin: auto;
 }
 a {
     text-decoration: /* OPTIMIZE:  */;
     color: #4d2a10;
+}
+
+hr {
+  border-width: 0.5px;
+  color: #4d2a10;
 }
 
 .btn-positive {

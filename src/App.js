@@ -160,21 +160,22 @@ class Question extends React.Component {
         <div>
           <Button title="Español" onPress={() => this.chooseSpanish()}/>
           <Button title="Deutsch" onPress={() => this.chooseGerman()}/>
-        </div>
-        <p><strong>Hausartzpraxis am Borsigturm</strong></p>
-        <div className="information">
-          <a href="http://www.borhani-harder-hausaerzte.de/hausarztpraxis-am-borsigturm---kontakt.html">
-          Kontakt Seite</a>
-          &nbsp; • &nbsp;
-          <a href="tel: 030 432 20 41">030 432 20 41</a>
-          &nbsp;
-          <strong>|</strong>
-          &nbsp;
-          <a href="tel: 030 432 23 29">030 432 23 29</a>
-          &nbsp; • &nbsp;
-          <a href="mailto: info@hausaerzte-borsigturm.de">
-            info@hausaerzte-borsigturm.de
-          </a>
+          <p><strong>Hausartzpraxis am Borsigturm</strong></p>
+          <div className="information">
+            <a href="http://www.borhani-harder-hausaerzte.de/hausarztpraxis-am-borsigturm---kontakt.html">
+            Kontakt</a>
+            &nbsp; • &nbsp;
+            <a href="tel: 030 432 20 41">030 432 20 41</a>
+            &nbsp;
+            <strong>|</strong>
+            &nbsp;
+            <a href="tel: 030 432 23 29">030 432 23 29</a>
+            &nbsp; • &nbsp;
+            <a href="mailto: info@hausaerzte-borsigturm.de">
+              info@hausaerzte-borsigturm.de
+            </a>
+            <hr></hr>
+          </div>
         </div>
         </header>
         <div className="Body">
