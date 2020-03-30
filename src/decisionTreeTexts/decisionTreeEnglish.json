@@ -1,0 +1,33 @@
+{
+  "one" : "<strong>I do not have</strong> symptoms.",
+  "two" : "I have symptoms like fever or cough.",
+  "three" : "Do you know anyone who <strong>has or had Covid-19?</strong>",
+  "four" : "<strong>Were you near</strong> the person when he or she was ill or at most two days before the onset of the <strong>first symptoms</strong> (especially fever and cough)?",
+  "five" : "...but a person with whom you have or have had <strong>personal contact</strong> has been in the <strong>vicinity of a person with a proven infection?</strong>",
+  "six" : "Does your contact person <strong>have symptoms</strong> (especially fever or cough)?",
+  "seven" : "The <strong>contact person</strong> should report to the public health department. They themselves should <strong>wait</strong> to see how he/she is <strong>tested for sars-CoV-2 infection.</strong>",
+  "eight": "<strong>You are not cathegorized as a posibly infected person.</strong><br><br>If symptoms occur (especially fever and cough), <strong>stay home, rest</strong> and call your doctor if the situation does not improve.",
+  "nine" : "Did you have at least 15 minutes of <strong>direct contact</strong> with the person, for example in a personal conversation<br><br>OR<br><br>you have touched a <strong>body fluid</strong> of the person, for example by kissing, sneezing or coughing<br><br>OR<br><br>did you have a <strong>seat on a plane</strong> two rows in front, back or in the same row as the person?",
+  "ten" : "You do not meet any of the three criteria mentioned above.<br><br>But have you been in the <strong>same room</strong> as the person?",
+  "thirteen" : "<strong>You are not cathegorized as a posibly infected person.</strong>.<br><br>If your contact person <strong>eventually does develop symptoms</strong>, start over, please.",
+  "yes" : "Yes",
+  "no" : "No",
+  "start-again": "Start over",
+  "positive": "Positive",
+  "negative": "Negative",
+  "category1": {
+    "title": "<strong>Contact person CATEGORY I >>higher risk of infection<<.</strong>",
+    "contact": "If the responsible health authority has not yet contacted you: <strong>Call them</strong> and explain your situation. If you cannot reach anyone, wait and <strong>try again later.</strong><br><br><strong>In case of symptoms:</strong> If you already have signs of illness (especially cough or fever) or develop them within 14 days, you are considered to be <strong>suspected of being ill.</strong> Contact the relevant health authority. They will clarify with you whether you should be tested and receive treatment. If you cannot reach anyone there, <strong>contact a doctor by telephone.</strong> Also make a note of who you had contact with up to two days before the onset of the first symptoms.",
+    "quarantine": "Whether you have to go into domestic quarantine, the health department will tell you. Until then, its suggested you <strong>leave your home as little as possible.</strong><br><br><strong>In case of symptoms:</strong> Stay at home and avoid going out in public completely if possible. The public health department can also order a quarantine in a hospital.",
+    "social": "Restrict contact with other people to what is necessary. If you are in domestic quarantine, try to <strong>keep distance from your roommates</strong>, for example by staying in a <strong>separate room</strong> and <strong>eating at different times.</strong>",
+    "hygiene": "Wash your hands regularly, cough into the crook of your arm and dispose of handkerchiefs immediately after using them.<br><br>You should also <strong>monitor your state of health for two weeks:</strong> take your temperature twice a day, keep a diary in which you record your temperature, symptoms, activities and contacts with other people."
+  },
+  "category2": {
+    "title": "<strong>Contact person CATEGORY II >>lower risk of infection<<.</strong>",
+    "contact": "Wait to see if the Health Department contacts you. You don't have to call them yourself.<br><br><strong>In case of symptoms:</strong> If you already have signs of illness (especially fever and cough) or if they develop within 14 days, contact the responsible health office. They will clarify with you whether you should be tested and receive treatment. If you cannot reach anyone there, <strong>contact a doctor by telephone.</strong> Also make a note of who you had contact with up to two days before the onset of the first symptoms.",
+    "quarantine": "If the health authority contacts you, follow the recommendations. Consider whether you can avoid going out in public, for example by working from home if you can.<br><br><strong>If symptoms occur:</strong>  stay at home and avoid going out in public completely if possible.",
+    "social": "<strong>Reduce contact with members in your household to the bare minimum</strong>, for example by staying in separate rooms and eating at different times.<br><br><strong>In case of symptoms:</strong> Avoid contact with other people completely if possible. ",
+    "hygiene": "Wash your hands regularly, cough in the crook of your arm and dispose of tissues immediately after using them. You <strong>do not need to monitor</strong> your health any more than usual. If you have no symptoms but are in contact with a health authority, try to let them know after 14 days that you have had no complaints."
+  },
+  "back": "Back"
+}

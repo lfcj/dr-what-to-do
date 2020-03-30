@@ -7,6 +7,7 @@ import final4 from './images/final-soziales-verhalten.png';
 import decisionTreeLogic from './decisionTree.json'
 import decisionTreeGermanText from './decisionTreeTexts/decisonTreeGerman.json'
 import decisionTreeSpanishText from './decisionTreeTexts/decisionTreeSpanish.json'
+import decisionTreeEnglishText from './decisionTreeTexts/decisionTreeEnglish.json'
 import Button from './components/Button'
 
 let firstQuestionKey = 'three'
@@ -27,7 +28,7 @@ const languages = {
 
 const sourceTexts = {
   [languages.DE] : decisionTreeGermanText,
-  [languages.EN] : decisionTreeGermanText,
+  [languages.EN] : decisionTreeEnglishText,
   [languages.ES] : decisionTreeSpanishText
 }
 
@@ -145,6 +146,10 @@ class Question extends React.Component {
     this.chooseLanguage(languages.ES)
   }
 
+  chooseEnglish = () => {
+    this.chooseLanguage(languages.EN)
+  }
+
   chooseLanguage = (newLanguge) => {
     this.setState((prevState, props) => {
       return {
@@ -159,6 +164,7 @@ class Question extends React.Component {
         <header className="App-header">
         <div>
           <Button title="Deutsch" onPress={() => this.chooseGerman()}/>
+          <Button title ="English" onPress={() => this.chooseEnglish()}/>
           <Button title="Español" onPress={() => this.chooseSpanish()}/>
           <p><strong>Hausarztpraxis am Borsigturm</strong></p>
           <div className="information">
@@ -186,10 +192,12 @@ class Question extends React.Component {
                  onPress={() => this.goBack()}/>
               : null
             }
+            {this.state.currentKey !== firstQuestionKey &&
+              <Button
+                title={this.textSource()[startAgainKey]}
+                onPress={() => this.startOver()}/>
+            }
 
-            <Button
-              title={this.textSource()[startAgainKey]}
-              onPress={() => this.startOver()}/>
           </div>
           <div>
             {this.parseHTMLIn(this.getTitle(this.textSource()[this.state.currentKey]))}
