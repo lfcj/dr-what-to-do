@@ -166,7 +166,7 @@ class Question extends React.Component {
           <Button title="Deutsch" onPress={() => this.chooseGerman()}/>
           <Button title ="English" onPress={() => this.chooseEnglish()}/>
           <Button title="Español" onPress={() => this.chooseSpanish()}/>
-          <p><strong>Hausarztpraxis am Borsigturm</strong></p>
+          <p><strong>Hab ich mich mit Dem Coronavirus infiziert ?</strong></p>
           <div className="information">
             <a href="http://www.borhani-harder-hausaerzte.de/hausarztpraxis-am-borsigturm---kontakt.html">
             Kontakt</a>
