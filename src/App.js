@@ -5,7 +5,7 @@ import final2 from './images/final-kontaktaufnahme.png';
 import final3 from './images/final-quarantaene.png';
 import final4 from './images/final-soziales-verhalten.png';
 import decisionTreeLogic from './decisionTree.json'
-import decisionTreeGermanText from './decisionTreeTexts/decisonTreeGerman.json'
+import decisionTreeGermanText from './decisionTreeTexts/decisionTreeGerman.json'
 import decisionTreeSpanishText from './decisionTreeTexts/decisionTreeSpanish.json'
 import decisionTreeEnglishText from './decisionTreeTexts/decisionTreeEnglish.json'
 import decisionTreeFrenchText from './decisionTreeTexts/decisionTreeFrench.json'
