@@ -1,14 +1,18 @@
 {
-  "one" : "<strong>No tengo</strong> síntomas como fiebre o tos",
-  "two" : "Tengo síntomas como fieber o tos",
+  "one" : "Tiene <strong>síntomas severos</strong>, especialmente al respirar (falta de aire, dolor o presión en el pecho).",
+  "two" : "¿Pertenece usted a un <strong>grupo de riesgo</strong>, es decir, está usted entre <strong>los 50 y 60 años</strong><br>O<br>tiene una enfermedad subyacente (como diabetes, cáncer, trastorno cardiovascular, enfermedades respiratorias, hígado o riñores)<br>O<br>tiene usted un <strong>sistema inmune debilitado</strong> (debido a alguna patología o a la toma de algún medicamento inhibidor como la cortisona)?",
   "three" : "¿Conoce a alguien que <strong>tenga pruebas</strong> de tener o haber tenido Covid-19?",
   "four" : "¿Estuvo cerca a esa persona hasta dos días antes de que esta persona presentase <strong>síntomas</strong> (especialmente fiebre o tos)?",
   "five" : "...pero una persona con quien usted tuvo <strong>contacto en persona</strong> estuvo <strong>cerca a alguien que estaba o está infectado</strong>?",
   "six" : "¿Tiene esa persona <strong>síntomas</strong> (especialmente fiebre o tos)?",
   "seven" : "Su <strong>contacto</strong> debe ponerse en contacto con el departamento de Sanidad. Usted debe <strong>esperar</strong> al resultado del <strong>test Sars-CoV-2</strong> de su contacto. ¿Cuál fue el resultado del test?",
-  "eight": "<strong>Usted no está categorizada como persona posiblemente infectada.</strong><br><br>Si presenta síntomas (especialmente fiebre y tos), <strong>quédese en casa, guarde reposo</strong> y contacte por teléfono a un médico si su situación no mejora.",
+  "eight": "<strong>Usted no está categorizada como persona posiblemente infectada.</strong><br><br>Si tiene <strong>síntomas leves</strong> quédese en casa y guarde reposo.<br>Si los síntomas <strong>empeoran</strong> o si usted ya tiene <strong>molestias graves</strong>, contacte un médico.",
   "nine" : "¿Tuvo al menos 15 minutos <strong>de contacto directo</strong> con la persona? ¿Una conversación en persona?<br><br>O<br><br>¿tuvo contacto con algun <strong>fluido corporal</strong> de la persona, a través de besos, estornudos o tos?<br><br>O<br><br>¿tuvo un <strong>asiento en un avión</strong> dos filas delante, detrás o en la misma fila que la persona?",
   "ten" : "Usted no califica para ninguna de los criterios nombrados.<br>¿Estuvo en <strong>la misma habitación</strong> que la persona?",
+  "eleven": {
+    "title": "<strong>Usted está en riesgo</strong>",
+    "contact": "Contacte por <strong>teléfono</strong> a un <strong>médico</strong> o, en caso de emergencia, contacte al 112 y explique la situación."
+  },
   "thirteen" : "<strong>Usted no está categorizada como persona posiblemente infectada.</strong>.<br><br>Si su persona de contacto <strong>finalmente sí desarrolla síntomas</strong> vuelva a empezar este cuestionario, por favor.",
   "yes" : "Sí",
   "no" : "No",
@@ -29,5 +33,10 @@
     "social": "<strong>Reduzca el contacto con otras personas en su casa a lo estrictamente necesario</strong>, por ejemplo, manténgase en <strong>habitaciones diferentes</strong> y <strong>coma a diferentes horas</strong>.<br><br><strong>Si tiene síntomas:</strong> Evite el contacto con otros completamente si es posible",
     "hygiene": "Lávese las manos con regularidad, tosa en dirección a la axila y bote los pañuelos rápidamente después de haberlos usado. No deben observar su estado de salud <strong>más de lo normal</strong>. Si no tiene síntomas pero se puso en contacto con el departamento de salud, intente comunicar a los 14 días que no tuvo molestias."
   },
-  "back": "Atrás"
+  "back": "Atrás",
+  "page-title": "¿Me he infectado con el coronavirus?",
+  "source1": "Esta página está basada en",
+  "source2": "una publicación de el periódico ZEIT",
+  "feedback": "Comentarios o feedback",
+  "contact": "Contacto"
 }

@@ -1,6 +1,12 @@
 {
-  "one" : "three",
-  "two" : "three",
+  "one" : {
+    "yes": "two",
+    "no": "three"
+  },
+  "two" : {
+    "yes": "eleven",
+    "no": "three"
+  },
   "three" : {
     "yes" : "four",
     "no" : "five"

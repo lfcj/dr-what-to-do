@@ -1,0 +1,42 @@
+{
+  "one" : "Vous avez des <strong> symptômes aigus </strong>, en particulier des difficultés respiratoires (essoufflement, douleur ou pression thoracique).",
+  "two" : "Si vous appartenez au <strong> groupe à risque </strong>, vous avez <strong>de plus de 50 à 60 ans </strong> <br> OU <br> avez une <strong> maladie de base </strong> (comme le diabète, le cancer, troubles cardiovasculaires, maladie du système respiratoire, du foie ou des reins), <br> OU <br> un <strong> système immunitaire affaibli </strong> (en raison d'une faiblesse du système immunitaire ou de la prise de médicaments inhibiteurs tels que la cortisone)?",
+  "three" : "Connaissez-vous quelqu'un qui a <strong> prouvé </strong> Covid-19?",
+  "four" : "Étiez-vous <strong> proche de vous </strong> pendant la période où la personne était malade ou au maximum deux jours avant le début des <strong> premiers symptômes </strong> (notamment fièvre et toux)?",
+  "five" : "... mais quelqu'un avec qui vous <strong> avez un contact personnel </strong> a été à proximité <strong> d'une personne infectée prouvée </strong>.",
+  "six" : "Votre personne de contact présente-t-elle des <strong> symptômes </strong> (en particulier de la fièvre ou de la toux)?",
+  "seven" : "La <strong> personne de contact </strong> doit se présenter au service de santé. Vous devez <strong> vous attendre </strong> à être testé pour une <strong> infection Sars CoV-2 </strong>. Comment la personne de contact a-t-elle été testée?",
+  "eight": "<strong> Vous n'êtes pas considéré comme une personne de contact. </strong> <br> <br> Si vous avez des <strong> symptômes légers </strong>, guérissez-vous à la maison. <br> Si les symptômes <strong> s'aggravent si vous avez </strong> ou déjà <strong> des symptômes aigus </strong>, contactez un médecin.",
+  "nine" : "Si vous avez eu au moins 15 minutes de <strong> contact direct </strong> avec la personne, par exemple lors d'une conversation personnelle <br> <br> OU <br> <br> vous avez touché un <strong> fluide corporel </strong> de la personne comme les baisers, les éternuements ou la toux <br> <br> OU <br> <br> avez-vous eu un <strong> siège dans un avion </strong> deux rangées devant, dans le dos ou dans la même rangée que la personne?",
+  "ten" : "Vous ne remplissez aucun des trois critères ci-dessus. <br> Avez-vous été dans <strong> la même pièce </strong> que la personne?",
+  "eleven": {
+    "title": "<strong>Vous courez un risque.</strong>",
+    "contact": "Contactez <strong> par téléphone </strong> un <strong> médecin </strong> ou, en cas d'urgence, 112 et décrivez votre situation."
+  },
+  "thirteen" : "<strong> Vous ne serez pas classé comme personne de contact </strong>. <br> <br> Si votre personne de contact présente toujours des symptômes, recommencez cette aide à la décision.",
+  "yes" : "Oui",
+  "no" : "Non",
+  "start-again": "Recommencer",
+  "positive": "Positif",
+  "negative": "Negatif",
+  "category1": {
+    "title": "<strong> Personne de contact catégorie I >> risque d'infection plus élevé << </strong>",
+    "contact": "Si l'autorité sanitaire responsable ne vous a pas encore contacté: <strong> Appelez </strong> et décrivez votre situation. Si vous ne pouvez joindre personne, attendez et <strong> réessayez plus tard. </strong> <br> <br> <strong> Si vous avez des symptômes </strong>: Si vous avez déjà des signes de maladie (en particulier toux, fièvre, nez qui coule) ou des problèmes respiratoires) ou se développer dans les 14 jours, vous êtes considéré comme <strong> suspect </strong>. Contactez le service de santé responsable. Cela vous permettra de savoir si vous devez subir un test et si vous devez vous faire soigner. Si vous ne pouvez joindre personne là-bas, <strong> appelez un médecin </strong>. Notez également avec qui vous avez été en contact jusqu'à deux jours avant l'apparition des symptômes.",
+    "quarantine": "Le service de santé vous dira si vous devez être mis en quarantaine à domicile. D'ici là, vous devez quitter votre <strong> appartement le moins possible </strong>. <br> <br> <strong> Si vous ressentez des symptômes </strong>: restez à la maison et évitez de vous rendre complètement public si possible. Le service de santé peut également organiser la mise en quarantaine dans un hôpital.",
+    "social": "Limitez le contact avec d'autres personnes à ce qui est nécessaire. Si vous êtes en quarantaine à la maison, essayez de <strong> vous éloigner de vos colocataires </strong>, par exemple, en restant dans une pièce séparée et en mangeant à des moments différents.",
+    "hygiene": "Lavez-vous les mains régulièrement, toussez dans le creux de votre bras et jetez les mouchoirs immédiatement après les avoir utilisés. <br> <strong> Surveillez également votre santé pendant deux semaines </strong>: mesurez la fièvre deux fois par jour Un journal dans lequel vous enregistrez votre température, vos symptômes, vos activités et vos contacts avec d'autres personnes."
+  },
+  "category2": {
+    "title": "<strong> personne de contact catégorie II >> moins de risque d'infection << </strong>",
+    "contact": "Attendez que le service de santé vous contacte. Vous n'avez pas à appeler vous-même. <br> <br> <strong> Si vous avez des symptômes </strong>: si vous avez déjà des signes de maladie (en particulier de la fièvre, de la toux, un écoulement nasal ou des difficultés respiratoires) ou si vous développez dans les 14 jours, impliquez-vous l'autorité sanitaire responsable. Cela clarifiera avec vous si vous êtes testé et devrait demander un traitement. Si vous ne pouvez joindre personne là-bas, <strong> appelez un médecin </strong>. Notez également avec qui vous avez été en contact jusqu'à deux jours avant l'apparition des symptômes.",
+    "quarantine": "Si le service de santé vous contacte, suivez les recommandations. Réfléchissez si vous pouvez éviter de vous adresser au public, par exemple en travaillant à domicile si vous le pouvez. <br> <br> <strong> Si vous avez des symptômes </strong>: restez à la maison et évitez d'entrer public autant que possible.",
+    "social": "<strong> Réduisez le contact avec les membres de votre foyer à ce qui est nécessaire </strong>, par exemple, en restant dans des <strong> pièces séparées </strong> et en mangeant à <strong> des moments différents </strong>. <br > <br> <strong> Si les symptômes </strong>: évitez si possible tout contact avec d'autres personnes",
+    "hygiene": "Lavez-vous les mains régulièrement, toussez vos aisselles et jetez les mouchoirs immédiatement après les avoir utilisés. Vous n'avez pas à <strong> surveiller votre santé plus que d'habitude </strong>. Si vous ne présentez aucun symptôme mais êtes en contact avec un service de santé, essayez de leur faire savoir après 14 jours que vous n'avez eu aucun symptôme."
+  },
+  "back": "Retour",
+  "page-title": "Ai-je attrapé le virus corona?",
+  "source1": "Le site est basé sur un",
+  "source2": "Publication dans le journal ZEIT",
+  "feedback": "Commentaire ou feedback",
+  "contact": "Contactez-nous"
+}

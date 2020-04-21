@@ -8,28 +8,36 @@ import decisionTreeLogic from './decisionTree.json'
 import decisionTreeGermanText from './decisionTreeTexts/decisonTreeGerman.json'
 import decisionTreeSpanishText from './decisionTreeTexts/decisionTreeSpanish.json'
 import decisionTreeEnglishText from './decisionTreeTexts/decisionTreeEnglish.json'
+import decisionTreeFrenchText from './decisionTreeTexts/decisionTreeFrench.json'
 import Button from './components/Button'
 
-let firstQuestionKey = 'three'
+let firstQuestionKey = 'one'
 let startAgainKey = "start-again"
+let pageTitleKey = "page-title"
 let backKey = "back"
+let sourceKey1 = "source1"
+let sourceKey2 = "source2"
+let contactKey = "contact"
+
 let finalImages = {
-  "contact": final1,
-  "quarantine": final2,
-  "social": final3,
-  "hygiene": final4
+  "contact": final2,
+  "quarantine": final3,
+  "social": final4,
+  "hygiene": final1
 }
 
 const languages = {
   ES: 'Español',
   DE: 'Deutsch',
-  EN: 'English'
+  EN: 'English',
+  FR: 'Français'
 }
 
 const sourceTexts = {
   [languages.DE] : decisionTreeGermanText,
   [languages.EN] : decisionTreeEnglishText,
-  [languages.ES] : decisionTreeSpanishText
+  [languages.ES] : decisionTreeSpanishText,
+  [languages.FR] : decisionTreeFrenchText
 }
 
 class Question extends React.Component {
@@ -150,6 +158,10 @@ class Question extends React.Component {
     this.chooseLanguage(languages.EN)
   }
 
+  chooseFrench = () => {
+    this.chooseLanguage(languages.FR)
+  }
+
   chooseLanguage = (newLanguge) => {
     this.setState((prevState, props) => {
       return {
@@ -166,10 +178,11 @@ class Question extends React.Component {
           <Button title="Deutsch" onPress={() => this.chooseGerman()}/>
           <Button title ="English" onPress={() => this.chooseEnglish()}/>
           <Button title="Español" onPress={() => this.chooseSpanish()}/>
-          <p><strong>Hab ich mich mit Dem Coronavirus infiziert ?</strong></p>
+          <Button title="Français" onPress={() => this.chooseFrench()}/>
+          <p><strong>{this.textSource()[pageTitleKey]}</strong></p>
           <div className="information">
             <a href="http://www.borhani-harder-hausaerzte.de/hausarztpraxis-am-borsigturm---kontakt.html">
-            Kontakt</a>
+            {this.textSource()[contactKey]}</a>
             &nbsp; • &nbsp;
             <a href="tel: 030 432 20 41">030 432 20 41</a>
             &nbsp;
@@ -180,7 +193,12 @@ class Question extends React.Component {
             <a href="mailto: info@hausaerzte-borsigturm.de">
               info@hausaerzte-borsigturm.de
             </a>
-            <hr></hr>
+          </div>
+          <div className="information">
+          <p>
+          {this.textSource()[sourceKey1]} <a href="https://www.zeit.de/wissen/gesundheit/2020-03/kontakt-erkrankte-covid-19-schutz-tipps">{this.textSource()[sourceKey2]}</a>
+          </p>
+          <hr></hr>
           </div>
         </div>
         </header>
@@ -209,7 +227,13 @@ class Question extends React.Component {
             {this.makeFinalOptions()}
           </div>
         </div>
+        <footer className="information">
+        <a href="mailto: praxis-bergmann@web.de">
+        {this.textSource()["feedback"]}
+        </a>
+        </footer>
       </div>
+
     );
   }
 }
