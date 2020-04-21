@@ -9,6 +9,7 @@ import decisionTreeGermanText from './decisionTreeTexts/decisonTreeGerman.json'
 import decisionTreeSpanishText from './decisionTreeTexts/decisionTreeSpanish.json'
 import decisionTreeEnglishText from './decisionTreeTexts/decisionTreeEnglish.json'
 import decisionTreeFrenchText from './decisionTreeTexts/decisionTreeFrench.json'
+import decisionTreePolishText from './decisionTreeTexts/decisionTreePolish.json'
 import Button from './components/Button'
 
 let firstQuestionKey = 'one'
@@ -30,14 +31,16 @@ const languages = {
   ES: 'Español',
   DE: 'Deutsch',
   EN: 'English',
-  FR: 'Français'
+  FR: 'Français',
+  PO: 'Polski'
 }
 
 const sourceTexts = {
   [languages.DE] : decisionTreeGermanText,
   [languages.EN] : decisionTreeEnglishText,
   [languages.ES] : decisionTreeSpanishText,
-  [languages.FR] : decisionTreeFrenchText
+  [languages.FR] : decisionTreeFrenchText,
+  [languages.PO] : decisionTreePolishText
 }
 
 class Question extends React.Component {
@@ -162,6 +165,10 @@ class Question extends React.Component {
     this.chooseLanguage(languages.FR)
   }
 
+  choosePolish = () => {
+    this.chooseLanguage(languages.PO)
+  }
+
   chooseLanguage = (newLanguge) => {
     this.setState((prevState, props) => {
       return {
@@ -179,6 +186,7 @@ class Question extends React.Component {
           <Button title ="English" onPress={() => this.chooseEnglish()}/>
           <Button title="Español" onPress={() => this.chooseSpanish()}/>
           <Button title="Français" onPress={() => this.chooseFrench()}/>
+          <Button title="Polski" onPress={() => this.choosePolish()}/>
           <p><strong>{this.textSource()[pageTitleKey]}</strong></p>
           <div className="information">
             <a href="http://www.borhani-harder-hausaerzte.de/hausarztpraxis-am-borsigturm---kontakt.html">
