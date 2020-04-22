@@ -1,19 +1,19 @@
 {
-  "one" : "Solunum güçlüğü (nefes darlığı, göğüs ağrısı)<br><br>gibi<strong>akut semptomlar</strong>gösteriyorsanız.",
-  "two" : "<strong>Risk grubunda</strong>mısınız,<strong>50 ya da 60</strong>yaşından büyük müsünüz?<br><br>YA DA<br><br>(Diabet, kanser, kalp-damar hastalıkları, solunum sistemi, kara-ciğer<br><br>YA DA<br><br>böbrek hastalıkları gibi)<strong>kronik bir hastalığınız</strong>var mı?<br><br>YA DA<br><br>(İmmün yetmezliği ya da kortizon gibi bağışıklık düşürücü ilaç alımı nedeniyle)<strong>bağışıklık sisteminiz</strong>zayıf mı?",
-  "three" : "Tanıdığınız kimseye Covid-19<strong>teşhisi</strong>kondu mu?",
-  "four" : "Covid-19 teşhisi konan kişi hasta olduğu sırada ya da (genellikle ateş ve öksürük şeklinde görülen) ilk<strong>semptomları</strong>göstermesinden iki gün öncesine kadar olan sürede o kişiyle<strong>görüştünüz</strong>mü?",
-  "five" : "... peki<strong>enfeksiyon tanısı konmuş biriyle</strong>yakın temasta bulunan bir kişiyle<strong>sizin temasınız</strong>oldu mu?",
-  "six" : "Temasta bulunduğunuz kişi (özellikle ateş ve öksürük şeklinde görülen) herhangi bir<strong>semptom</strong>gösteriyor muydu?",
+  "one" : "Solunum güçlüğü (nefes darlığı, göğüs ağrısı)<br><br>gibi <strong>akut semptomlar</strong> gösteriyorsanız.",
+  "two" : "<strong>Risk grubunda</strong> mısınız, <strong>50 ya da 60</strong> yaşından büyük müsünüz?<br><br>YA DA<br><br>(Diabet, kanser, kalp-damar hastalıkları, solunum sistemi, kara-ciğer<br><br>YA DA<br><br>böbrek hastalıkları gibi) <strong>kronik bir hastalığınız</strong> var mı?<br><br>YA DA<br><br>(İmmün yetmezliği ya da kortizon gibi bağışıklık düşürücü ilaç alımı nedeniyle) <strong>bağışıklık sisteminiz</strong> zayıf mı?",
+  "three" : "Tanıdığınız kimseye Covid-19<strong>teşhisi</strong> kondu mu?",
+  "four" : "Covid-19 teşhisi konan kişi hasta olduğu sırada ya da (genellikle ateş ve öksürük şeklinde görülen) ilk <strong>semptomları</strong> göstermesinden iki gün öncesine kadar olan sürede o kişiyle <strong>görüştünüz</strong> mü?",
+  "five" : "... peki <strong>enfeksiyon tanısı konmuş biriyle</strong> yakın temasta bulunan bir kişiyle <strong>sizin temasınız</strong> oldu mu?",
+  "six" : "Temasta bulunduğunuz kişi (özellikle ateş ve öksürük şeklinde görülen) herhangi bir <strong>semptom</strong> gösteriyor muydu?",
   "seven" : "Temasta bulunduğunuz kişi hemen Gesund- heitsamt‘a başvurmalıdır. Siz de o kişinin Sars-CoV-2 enfeksiyon testinin sonuçlarını takip edin, test sonuçlarını sizinle de paylaşmasını isteyin.",
-  "eight": "<strong>Covid19 kişisi olarak sınıflandırılmadını<strong><br><br><strong>Hafif semptomlar</strong>gösterirseniz, kendiniz için evde tedavi uygulayabilirsiniz. Eğer semptomlarınız<strong>ağırlaşırsa</strong> ya da<strong>akut semptomlar</strong>gösterirseniz, doktora başvurun",
-  "nine" : "Covid-19 teşhisi konan kişiyle 15 dakikadan uzun doğrudan temasınız oldu mu, örneğin o kişiyle<strong>yüz yüze gelip konuştunuz</strong>mu,<br><br>YA DA<br><br>O kişinin<strong>vücut sıvısına</strong>maruz kaldınız mı, örneğin öpüştünüz mü, kişi yanınızda hapşırdı mı ya da öksürdü mü?",
-  "ten" : "Yukarıdaki kriterlerin hiçbirini karşılamıyor olabilirsiniz.<br><br>Ancak bu kişiyle<strong>aynı odada</strong>bulundunuz mu?",
+  "eight": "<strong>Covid19 kişisi olarak sınıflandırılmadını<strong><br><br><strong>Hafif semptomlar</strong> gösterirseniz, kendiniz için evde tedavi uygulayabilirsiniz. Eğer semptomlarınız <strong>ağırlaşırsa</strong> ya da <strong>akut semptomlar</strong> gösterirseniz, doktora başvurun",
+  "nine" : "Covid-19 teşhisi konan kişiyle 15 dakikadan uzun doğrudan temasınız oldu mu, örneğin o kişiyle <strong>yüz yüze gelip konuştunuz</strong> mu,<br><br>YA DA<br><br>O kişinin <strong>vücut sıvısına</strong> maruz kaldınız mı, örneğin öpüştünüz mü, kişi yanınızda hapşırdı mı ya da öksürdü mü?",
+  "ten" : "Yukarıdaki kriterlerin hiçbirini karşılamıyor olabilirsiniz.<br><br>Ancak bu kişiyle <strong>aynı odada</strong> bulundunuz mu?",
   "eleven": {
     "title": "<strong>Risk altındasın</strong>",
-    "contact": "<strong>Telefonla doktorunuzu</strong>arayın,  ya da acil durumda 112'yi arayın ve durumunuzu tarif edin."
+    "contact": "<strong>Telefonla doktorunuzu</strong> arayın,  ya da acil durumda 112'yi arayın ve durumunuzu tarif edin."
   },
-  "thirteen" : "<strong>Covid-19 ile iletişim olarak sınıflandırılmadınız.</strong><br><br><strong>Hafif semptomlar</strong>gösterirseniz, kendiniz için evde tedavi uygulayabilirsiniz. Eğer semptomlarınız<strong>ağırlaşırsa</strong>ya da<strong>akut semptomlar</strong>gösterirseniz, doktora başvurun.<br><br>Temasta bulunduğunuz kişi<strong>semptomları göstermeye</strong>başlarsa, bu formu en baştan tekrar gözden geçirin.",
+  "thirteen" : "<strong>Covid-19 ile iletişim olarak sınıflandırılmadınız.</strong><br><br><strong>Hafif semptomlar</strong> gösterirseniz, kendiniz için evde tedavi uygulayabilirsiniz. Eğer semptomlarınız <strong>ağırlaşırsa</strong> ya da <strong>akut semptomlar</strong> gösterirseniz, doktora başvurun.<br><br>Temasta bulunduğunuz kişi <strong>semptomları göstermeye</strong> başlarsa, bu formu en baştan tekrar gözden geçirin.",
   "yes" : "Evet",
   "no" : "Hayr",
   "start-again": "baştan başlamak",
@@ -21,22 +21,22 @@
   "negative": "Negatif",
   "category1": {
     "title": "<strong>Temas kategorisi I. Yüksek enfeksiyon riski</strong>",
-    "contact": "Eğer yetkili Gesundheitsamt (sağlık müdürlüğü) sizinle henüz iletişime geçmediyse: Onları arayın ve durumunuzu anlatın. Eğer kimseye ulaşamazsınız, bir süre bekledikten sonra<strong>tekrar deneyin.</strong><br><br><strong>Semptomları göstermeniz durumunda</strong>:Hali hazırda (genellikle ateş ve öksürük şeklinde görülen) hastalık belirtileri gösteriyorsanız ya da 14 gün içinde gösterirseniz, hastalık şüphesi taşıyorsunuz demektir. Yetkili Gesundheitsamt (sağlık müdürlüğü) ile iletişime geçin. Test yapılıp yapılmayacağına ve tedavinize onlar karar verecekler. Kimseye ulaşamadığınız durumda, doğrudan<strong>bir doktoru arayın.</strong> İlk semptomları göstermenizden iki gün öncesine kadar kimlerle görüştüğünüzle ilgili bilgileri not edin.",
+    "contact": "Eğer yetkili Gesundheitsamt (sağlık müdürlüğü) sizinle henüz iletişime geçmediyse: Onları arayın ve durumunuzu anlatın. Eğer kimseye ulaşamazsınız, bir süre bekledikten sonra <strong>tekrar deneyin.</strong><br><br><strong>Semptomları göstermeniz durumunda</strong>: Hali hazırda (genellikle ateş ve öksürük şeklinde görülen) hastalık belirtileri gösteriyorsanız ya da 14 gün içinde gösterirseniz, hastalık şüphesi taşıyorsunuz demektir. Yetkili Gesundheitsamt (sağlık müdürlüğü) ile iletişime geçin. Test yapılıp yapılmayacağına ve tedavinize onlar karar verecekler. Kimseye ulaşamadığınız durumda, doğrudan <strong>bir doktoru arayın.</strong> İlk semptomları göstermenizden iki gün öncesine kadar kimlerle görüştüğünüzle ilgili bilgileri not edin.",
     "quarantine": "Gesundheitsamt (sağlık müdürlüğü) evde karantina uygulaması yapıp yapmamanız gerektiğine karar verecektir. O zamana kadar mümkün olduğunca az evden çıkmanız önerilir.<br><strong>Semptomları göstermeniz durumunda:</strong> Evde kalın ve mümkünse hiç dışarı çıkmayın. Sağlık müdürlüğü hastanede karantina altına alınmanızı da önerebilir.",
-    "social": "Diğer kişilerle teması zaruri durumlarla sınırlayın. Evde karantina altındaysanız,<strong>ev arkadaşlarınızla aranızdaki mesafeyi</strong>korumaya çalışın, örneğin<strong>ayrı odalarda</strong>kalın ve<strong>farklı zamanlarda yemek yiyin.</strong>",
+    "social": "Diğer kişilerle teması zaruri durumlarla sınırlayın. Evde karantina altındaysanız,<strong>ev arkadaşlarınızla aranızdaki mesafeyi</strong> korumaya çalışın, örneğin <strong>ayrı odalarda</strong> kalın ve <strong>farklı zamanlarda yemek yiyin.</strong>",
     "hygiene": "Düzenli olarak ellerinizi yıkayın, dirseğinizin iç tarafına doğru öksürün ve kullandığınız mendilleri hemen atın.<br><br><strong>Sağlık durumunuzu iki hafta boyunca gözlemleyin:</strong> Günde iki kez ateşinizi ölçün; ateşinizi, semptomlarınızı, gündelik aktivitelerinizi ve temas ettiğiniz diğer kişileri yazarak not edin."
   },
   "category2": {
     "title": "<strong>Temas kategorisi II. » düşük enfeksiyon riski «</strong>",
-    "contact": "Gesundheitsamt‘ın (sağlık müdürlüğünün) sizinle temasa geçmesini bekleyin. Sizin onları aramanıza gerek yok.<br><br><strong>Semptomları göstermeniz durumunda:</strong> Hali hazırda (özellikle ateş ve öksürük şeklinde görülen) hastalık belirtileri gösteriyorsanız ya da 14 gün içinde gösterirseniz, yetkili Gesundheitsamt (sağlık müdürlüğü) ile iletişime geçin. Test yapılıp yapılmayacağına ve tedavinize onlar karar verecekler. Kimseye ulaşamadığınız durumda, doğrudan<strong>bir doktoru arayın.</strong> İlk semptomları göstermenizden iki gün öncesine kadar kimlerle görüştüğünüzle ilgili bilgileri not edin.<br><br>Herhangi bir semptom göstermediyseniz ve fakat<br><br>Gesundheitsamt (sağlık müdürlüğü) ile iletişim halindeyseniz,<strong>14 gün geçtikten sonra</strong>yetkilileri herhangi bir<strong>semptom göstermediğiniz</strong>bilgisini iletin.",
+    "contact": "Gesundheitsamt‘ın (sağlık müdürlüğünün) sizinle temasa geçmesini bekleyin. Sizin onları aramanıza gerek yok.<br><br><strong>Semptomları göstermeniz durumunda:</strong> Hali hazırda (özellikle ateş ve öksürük şeklinde görülen) hastalık belirtileri gösteriyorsanız ya da 14 gün içinde gösterirseniz, yetkili Gesundheitsamt (sağlık müdürlüğü) ile iletişime geçin. Test yapılıp yapılmayacağına ve tedavinize onlar karar verecekler. Kimseye ulaşamadığınız durumda, doğrudan <strong>bir doktoru arayın.</strong> İlk semptomları göstermenizden iki gün öncesine kadar kimlerle görüştüğünüzle ilgili bilgileri not edin.<br><br>Herhangi bir semptom göstermediyseniz ve fakat<br><br>Gesundheitsamt (sağlık müdürlüğü) ile iletişim halindeyseniz,<strong>14 gün geçtikten sonra</strong> yetkilileri herhangi bir <strong>semptom göstermediğiniz</strong> bilgisini iletin.",
     "quarantine": "Gesundheitsamt (sağlık müdürlüğü) sizinle iletişime geçtiyse, onlar tarafından verilen önerileri uygulayın. Evden dışarı çıkmamanın yollarını araştırın, örneğin mümkünse evden çalışın.<br><br><strong>Semptomları göstermeniz durumunda:</strong> Evde kalın, mümkünse hiç dışarı çıkmayın.",
-    "social": "Aynı evde yaşadığınız diğer kişilerle teması minimuma indirin, örneğin<strong>ayrı odalarda kalın ve<strong>farklı zamanlarda yemek yiyin.</strong><br><br><strong>Semptomları göstermeniz durumunda:</strong> Mümkünse diğer kişilerle temasınızı tamamen kesin.",
-    "hygiene": "Düzenli olarak ellerinizi yıkayın, dirseğinizin iç tarafına doğru öksürün ve kullandığınız mendilleri hemen atın.<br><br>Kamusal alanda diğer kişilerle<strong>makul bir mesafede</strong>ilişki kurun."
+    "social": "Aynı evde yaşadığınız diğer kişilerle teması minimuma indirin, örneğin <strong>ayrı odalarda kalın ve <strong>farklı zamanlarda yemek yiyin.</strong><br><br><strong>Semptomları göstermeniz durumunda:</strong> Mümkünse diğer kişilerle temasınızı tamamen kesin.",
+    "hygiene": "Düzenli olarak ellerinizi yıkayın, dirseğinizin iç tarafına doğru öksürün ve kullandığınız mendilleri hemen atın.<br><br>Kamusal alanda diğer kişilerle <strong>makul bir mesafede</strong> ilişki kurun."
   },
-  "back": "Zurück",
+  "back": "Geri",
   "page-title": "Korona virüsünü aldım mı?",
-  "source1": "Die Seite basiert auf einer",
-  "source2": "Veröffentlichung in der ZEIT",
-  "feedback": "Kommentar oder feedback",
-  "contact": "Kontakt"
+  "source1": "Sayfa",
+  "source2": "ZEIT'deki bir yayına dayanmaktadır",
+  "feedback": "Yorum veya geri bildirim",
+  "contact": "Temas"
 }

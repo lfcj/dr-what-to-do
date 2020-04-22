@@ -1,6 +1,6 @@
 {
   "one" : "Do you have <strong>acute symptoms</strong>, especially difficulty to breath (shortness of breath, chest pain or pressure)?",
-  "two" : "Do you belong to a<strong> risk group</strong>, i.e. you are over 50 to 60 years old,<br>OR<br>have an <strong>underlying disease</strong> (such as diabetes, cardiovascular disorder, respiratory system, liver or kidney)<br>OR<br>a <strong>suppressed immune system</strong> (due to immune system weakness or taking inhibitory drugs such as cortinose)?.",
+  "two" : "Do you belong to a <strong> risk group</strong>, i.e. you are over 50 to 60 years old,<br>OR<br>have an <strong>underlying disease</strong> (such as diabetes, cardiovascular disorder, respiratory system, liver or kidney)<br>OR<br>a <strong>suppressed immune system</strong> (due to immune system weakness or taking inhibitory drugs such as cortinose)?.",
   "three" : "Do you know anyone who <strong>has or had Covid-19?</strong>",
   "four" : "<strong>Were you near</strong> the person when he or she was ill or at most two days before the onset of the <strong>first symptoms</strong> (especially fever and cough)?",
   "five" : "...but a person with whom you have or have had <strong>personal contact</strong> has been in the <strong>vicinity of a person with a proven infection?</strong>",

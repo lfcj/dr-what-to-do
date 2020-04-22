@@ -10,6 +10,7 @@ import decisionTreeSpanishText from './decisionTreeTexts/decisionTreeSpanish.jso
 import decisionTreeEnglishText from './decisionTreeTexts/decisionTreeEnglish.json'
 import decisionTreeFrenchText from './decisionTreeTexts/decisionTreeFrench.json'
 import decisionTreePolishText from './decisionTreeTexts/decisionTreePolish.json'
+import decisionTreeTurkishText from './decisionTreeTexts/decisionTreeTurkish.json'
 import Button from './components/Button'
 
 let firstQuestionKey = 'one'
@@ -32,7 +33,8 @@ const languages = {
   DE: 'Deutsch',
   EN: 'English',
   FR: 'Français',
-  PO: 'Polski'
+  PO: 'Polski',
+  TR: 'Türk'
 }
 
 const sourceTexts = {
@@ -40,7 +42,8 @@ const sourceTexts = {
   [languages.EN] : decisionTreeEnglishText,
   [languages.ES] : decisionTreeSpanishText,
   [languages.FR] : decisionTreeFrenchText,
-  [languages.PO] : decisionTreePolishText
+  [languages.PO] : decisionTreePolishText,
+  [languages.TR] : decisionTreeTurkishText
 }
 
 class Question extends React.Component {
@@ -98,6 +101,7 @@ class Question extends React.Component {
     }
 
     Object.keys(finalImages).forEach(key => {
+      console.log(key)
       let hasTextForImage = this.textSource()[this.state.currentKey][key] != null
       if (hasTextForImage) {
         finalOptions.push(
@@ -149,32 +153,17 @@ class Question extends React.Component {
     return <div className="Text" dangerouslySetInnerHTML={{__html: text}} />
   }
 
-  chooseGerman = () => {
-    this.chooseLanguage(languages.DE)
-  }
-
-  chooseSpanish = () => {
-    this.chooseLanguage(languages.ES)
-  }
-
-  chooseEnglish = () => {
-    this.chooseLanguage(languages.EN)
-  }
-
-  chooseFrench = () => {
-    this.chooseLanguage(languages.FR)
-  }
-
-  choosePolish = () => {
-    this.chooseLanguage(languages.PO)
-  }
-
-  chooseLanguage = (newLanguge) => {
+  chooseLanguage = (newLanguage) => {
     this.setState((prevState, props) => {
       return {
-        currentLanguage: newLanguge
+        currentLanguage: newLanguage
       }
     })
+  }
+
+  handleSelectChange= (event) => {
+    console.log(event.target.value)
+    this.chooseLanguage(event.target.value)
   }
 
   render() {
@@ -182,11 +171,16 @@ class Question extends React.Component {
       <div className="App">
         <header className="App-header">
         <div>
-          <Button title="Deutsch" onPress={() => this.chooseGerman()}/>
-          <Button title ="English" onPress={() => this.chooseEnglish()}/>
-          <Button title="Español" onPress={() => this.chooseSpanish()}/>
-          <Button title="Français" onPress={() => this.chooseFrench()}/>
-          <Button title="Polski" onPress={() => this.choosePolish()}/>
+          <select
+            value={this.state.currentLanguage}
+            onChange={this.handleSelectChange}>
+                <option value={languages.DE}>Deutsch</option>
+                <option value={languages.EN}>English</option>
+                <option value={languages.ES}>Español</option>
+                <option value={languages.FR}>Français</option>
+                <option value={languages.PO}>Polski</option>
+                <option value={languages.TR}>Türk</option>
+          </select>
           <p><strong>{this.textSource()[pageTitleKey]}</strong></p>
           <div className="information">
             <a href="http://www.borhani-harder-hausaerzte.de/hausarztpraxis-am-borsigturm---kontakt.html">
