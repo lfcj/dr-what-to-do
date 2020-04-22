@@ -20,14 +20,14 @@
   "positive": "Positive",
   "negative": "Negative",
   "category1": {
-    "title": "<strong>Contact person CATEGORY I >>higher risk of infection<<.</strong>",
+    "title": "<strong>Contact person CATEGORY I »higher risk of infection«.</strong>",
     "contact": "If the responsible health authority has not yet contacted you: <strong>Call them</strong> and explain your situation. If you cannot reach anyone, wait and <strong>try again later.</strong><br><br><strong>In case of symptoms:</strong> If you already have signs of illness (especially cough, fever, sniff or difficulty breathing) or develop them within 14 days, you are considered to be <strong>suspected of being ill.</strong> Contact the relevant health authority. They will clarify with you whether you should be tested and receive treatment. If you cannot reach anyone there, <strong>contact a doctor by telephone.</strong> Also make a note of who you had contact with up to two days before the onset of the first symptoms.",
     "quarantine": "Whether you have to go into domestic quarantine, the health department will tell you. Until then, its suggested you <strong>leave your home as little as possible.</strong><br><br><strong>In case of symptoms:</strong> Stay at home and avoid going out in public completely if possible. The public health department can also order a quarantine in a hospital.",
     "social": "Restrict contact with other people to what is necessary. If you are in domestic quarantine, try to <strong>keep distance from your roommates</strong>, for example by staying in a <strong>separate room</strong> and <strong>eating at different times.</strong>",
     "hygiene": "Wash your hands regularly, cough into the crook of your arm and dispose of handkerchiefs immediately after using them.<br><br>You should also <strong>monitor your state of health for two weeks:</strong> take your temperature twice a day, keep a diary in which you record your temperature, symptoms, activities and contacts with other people."
   },
   "category2": {
-    "title": "<strong>Contact person CATEGORY II >>lower risk of infection<<.</strong>",
+    "title": "<strong>Contact person CATEGORY II »lower risk of infection«.</strong>",
     "contact": "Wait to see if the Health Department contacts you. You don't have to call them yourself.<br><br><strong>In case of symptoms:</strong> If you already have signs of illness (especially cough, fever, sniff or difficulty breathing) or if they develop within 14 days, contact the responsible health office. They will clarify with you whether you should be tested and receive treatment. If you cannot reach anyone there, <strong>contact a doctor by telephone.</strong> Also make a note of who you had contact with up to two days before the onset of the first symptoms.",
     "quarantine": "If the health authority contacts you, follow the recommendations. Consider whether you can avoid going out in public, for example by working from home if you can.<br><br><strong>If symptoms occur:</strong>  stay at home and avoid going out in public completely if possible.",
     "social": "<strong>Reduce contact with members in your household to the bare minimum</strong>, for example by staying in separate rooms and eating at different times.<br><br><strong>In case of symptoms:</strong> Avoid contact with other people completely if possible. ",
